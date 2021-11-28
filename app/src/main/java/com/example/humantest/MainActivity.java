@@ -7,6 +7,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+/********************************************************
+ * nazwa klasy: MainActivity
+ * atrybuty klasy: pytania - tablica z pytaniami weryfikacyjnymi
+ *                 odpowiedzi - tablica z prawidłowymi odpowiedziami na pytania
+ *                 wylosowane - wnumer ylosowanego pytania
+ * opis: klasa uruchomieniowa
+ * autor: 67890123456
+ * ****************************************************/
 public class MainActivity extends AppCompatActivity {
     String[] pytania ={"Jakie miasto jest stolicą Polski?",
                        "Jakie miasto jest stolicą Francji?",
@@ -21,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
 
     int wylosowane = 0;
 
+    /********************************************************
+     * nazwa funkcji: onCreate
+     * parametry wejściowe: savedInstanceState - zapisane parametry uruchomieniowe
+     * wartość zwracana: brak
+     * opis: główna funkcja uruchomieniowa
+     * autor: 67890123456
+     * ****************************************************/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +45,13 @@ public class MainActivity extends AppCompatActivity {
         pytanie.setText(pytania[wylosowane]);
     }
 
+    /********************************************************
+     * nazwa funkcji: sprawdz
+     * parametry wejściowe: view - widok, na którym zaszło obsługiwane zdarzenie
+     * wartość zwracana: brak
+     * opis: funkcja obsługująca wybranie przycisku Sprawdż
+     * autor: 67890123456
+     * ****************************************************/
     public void sprawdz(View view) {
         String komunikatStr = "";
         EditText imie = (EditText) findViewById(R.id.imie);

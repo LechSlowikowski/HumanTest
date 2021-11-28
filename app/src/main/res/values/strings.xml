@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">HumanTest</string>
+    <string name="tytul">Weryfikacja danych osobowych</string>
+    <string name="imie">Imię:</string>
+    <string name="zacheta_imie">Wprowadź imię</string>
+    <string name="nazwisko">Nazwisko:</string>
+    <string name="zacheta_nazwisko">Wprowadź nazwisko</string>
+    <string name="pytanie">Pytanie</string>
+    <string name="zacheta_odpowiedz">Odpowiedź</string>
+    <string name="sprawdz">Sprawdź</string>
+    <string name="komunikat">Tu pojawi się weryfikacja użytkownika</string>
 </resources>

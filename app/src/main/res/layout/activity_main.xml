@@ -16,49 +16,49 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Weryfikacja danych osobowych"
-        android:textSize="28sp"
-        android:background="#009090"/>
+        android:text="@string/tytul"
+        android:textSize="@dimen/duza_czcionka"
+        android:background="@color/kolor_morski"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Imię: " />
+        android:text="@string/imie" />
     <EditText
         android:id="@+id/imie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Wprowadź imię"
+        android:hint="@string/zacheta_imie"
         android:imeOptions="actionNext" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nazwisko: " />
+        android:text="@string/nazwisko" />
     <EditText
         android:id="@+id/nazwisko"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Wprowadź nazwisko"
+        android:hint="@string/zacheta_nazwisko"
         android:imeOptions="actionNext" />
 
     <TextView
         android:id="@+id/pytanie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pytanie " />
+        android:text="@string/pytanie" />
     <EditText
         android:id="@+id/odpowiedz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Odpowiedź"
+        android:hint="@string/zacheta_odpowiedz"
         android:imeOptions="actionNext" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Sprawdź"
+        android:text="@string/sprawdz"
         android:onClick="sprawdz"/>
 
     <TextView
@@ -67,5 +67,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Tu pojawi się weryfikacja użytkownika" />
+        android:text="@string/komunikat" />
 </LinearLayout>
